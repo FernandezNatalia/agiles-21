@@ -35,6 +35,8 @@ jobs:
       run: |
         pytest
     - name: Run login test
-      run: test_hg_login.py
+      run: |
+        test_hg_login.py
     - name: Run player test
-      run: test_hg_player.py
+      run: |
+        test_hg_player.py
