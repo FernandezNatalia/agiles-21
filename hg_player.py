@@ -6,11 +6,6 @@ class Player:
         self.username = username
         self.password = password
 
-        # self.__nombre = nombre
-
-    # def setnombre(self, nombre):
-    #     self.__nombre = nombre
-
     @property
     def lifes(self):
         return 3
