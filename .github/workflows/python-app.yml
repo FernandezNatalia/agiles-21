@@ -34,9 +34,3 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Run login test
-      run: |
-        python test_hg_login.py
-    - name: Run player test
-      run: |
-        python test_hg_player.py
