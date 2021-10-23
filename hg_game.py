@@ -1,5 +1,3 @@
-import numpy as np
-
 class Game:
     words = ["vaca", "pato", "perro", "mate", "hola"]
     def generate_word(self, point, level=2):      
