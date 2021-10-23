@@ -1,7 +1,6 @@
 from logging import log
 import unittest
 import hg_game
-import numpy as np
 import pytest
 from parameterized import parameterized
 
