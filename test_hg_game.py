@@ -1,9 +1,3 @@
-from logging import log
-import unittest
-import hg_game
-import pytest
-from parameterized import parameterized
-
 class TestHangmanGameGame(unittest.TestCase):
 
     def test_generate_word(self):
@@ -32,4 +26,10 @@ class TestHangmanGameGame(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    from logging import log
+    import unittest
+    import hg_game
+    import pytest
+    from parameterized import parameterized
     unittest.main()
+
