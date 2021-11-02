@@ -3,7 +3,7 @@ from hg_player import Player
 
 class Login:
 
-    def __init__(self, *args):  # args
+    def __init__(self, *args):
         if self.login(args):
             self.player = Player(args)
 
@@ -28,5 +28,3 @@ class Login:
         if len(string) < 3 or len(string) > 30:
             raise ValueError(
                 'The username must contain at least 3 letters and a maximum of 30')
-
-        # player = Player(username, password, firs_name, last_name)
