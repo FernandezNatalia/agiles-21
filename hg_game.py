@@ -14,4 +14,17 @@ class Game:
     def risk_word(self, word):
         if word == self.word:
             return True
-        return False
+        else:
+            return False
+
+    def risk_letter(self, letter):
+        if not letter.isalpha() or not letter:
+            raise ValueError('The character must be a letter')
+        try:
+            letters = []
+            for pos, char in enumerate(self.word):
+                if(char == letter):
+                    letters.append(pos)
+            return letters
+        except ValueError as ve:
+            return False
